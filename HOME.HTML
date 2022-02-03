@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tienda Cesur</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <div class="navbar">
+        <nav>
+            <ul>
+
+                <li><a href="login.html" accesskey="l">LOGIN </a></li>
+                <li><a href="registro.html" accesskey="r">REGISTRO</a></li>
+                <li><a href="contacto.html" accesskey="c">CONTACTO</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div class="accesibilidadMenus">Si utilizas Firefox puedes acceder a los elementos del Menu con ALT+Shift+Primera
+        Letra</div>
+    <br><br>
+    <br>
+
+    <div class="reproductor">
+
+        <audio id="reproductor" controls>
+            <source src="Alexander_Nakarada_-_The_Return.mp3" type="audio/ogg">
+            <source src="Alexander_Nakarada_-_The_Return.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+
+
+        <div>
+            <button title="PLAY" id="botonplay" onclick="document.getElementById('reproductor').play()"><img src="play.png"></button>
+            <button title="PAUSE" id="botonstop" onclick="document.getElementById('reproductor').pause()"><img
+                    src="stop.png"></button>
+            <button title= "MAS VOLUMEN" id="botonmas" onclick="document.getElementById('reproductor').volume+=0.1"><img
+                    src="mas.png"></button>
+            <button title= "MENOS VOLUMEN" id="botonmenos" onclick="document.getElementById('reproductor').volume-=0.1"><img
+                    src="menos.png"></button>
+        </div>
+        <p> Audio en diferido y sin letra</p>
+
+    </div>
+
+
+
+
+    <section>
+        <div class="productos">
+            <div class="cursos">
+                <div class="titprod">
+                    <p> <img class="logocesur" src="logoPropioReducido.png" alt="imagenLogo" title="CESUR">
+                        <br><button id="pararAnimacion">Parar Animación</button>
+                    </p> Los mejores cursos de Cesur
+
+                    <br><br><br>
+
+                </div>
+                <div class="containertext">
+                    <img class="imageprod" src="daw.jpg" alt="imagenCurso" title="daw">
+                    <div class="inside">
+                        <div class="price">3.000€</div>
+                        <div class="textprod" tabindex="1">Solicitar</div>
+                    </div>
+                </div>
+                <div class="containertext">
+                    <img class="imageprod" src="dam.jpg" alt="imagenCurso" title="dam">
+                    <div class="inside">
+                        <div class="price">3.000€</div>
+                        <div class="textprod">Solicitar</div>
+                    </div>
+                </div>
+                <div class="containertext">
+                    <img class="imageprod" src="asir.jpg" alt="imagenCurso" title="asir">
+                    <div class="inside">
+                        <div class="price">3.000€</div>
+                        <div class="textprod">Solicitar</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="productosNuevos">
+                <div class="nuevos">
+                    <div class="titNuevos">Nuevos Cursos</div>
+                    <div class="containertext">
+                        <img class="imageproddj" src="dj-Modificado.jpg" alt="imagenCurso" title="dj">
+                        <div class="inside">
+                            <div class="price">3.000€</div>
+                            <div class="textprod">Solicitar</div>
+                        </div>
+                    </div>
+                    <div class="containertext">
+                        <img class="imageprodfoto" src="fotografía-Modificado.png" alt="imagenCurso" title="fotografia">
+                        <div class="inside">
+                            <div class="price">3.000€</div>
+                            <div class="textprod">Solicitar</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="containertext">
+                    <img class="imageprodcocina" src="cocina-Modificado.jpg" alt="imagenCurso" title="cocina">
+                    <div class="inside">
+                        <div class="price">3.000€</div>
+                        <div class="textprod">Solicitar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: auto;" class="videoRepr">
+
+            <video id="reprVideo" width="300" height="300" preload="metadata" poster="navidad.jpg">
+                <!--el poster pone una imagen previa-->
+                <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <div>
+                <button title="PLAY" id="botonplay" onclick="document.getElementById('reprVideo').play()"><img
+                        src="play.png"></button>
+                <button title="PAUSE" id="botonstop" onclick="document.getElementById('reprVideo').pause()"><img
+                        src="stop.png"></button>
+                <button title="MAS VOLUMEN" id="botonmas" onclick="document.getElementById('reprVideo').volume+=0.1"><img
+                        src="mas.png"></button>
+                <button title="MENOS VOLUMEN" id="botonmenos" onclick="document.getElementById('reprVideo').volume-=0.1"><img
+                        src="menos.png"></button>
+            </div>
+            <p>Video sin transcripción, solo video</p>
+        </div>
+
+
+        <div class="dialog">
+            <h1>FELICITACION NAVIDEÑA</h1>
+
+
+
+            <dialog id="dialogo" style="text-align: center; width: 1800px;height: 1200px;">
+                <p> <button style="width: 200px;height: 50px;" id="close"
+                        onclick="document.getElementById('dialogo').close();">Volver</button></p>
+                <img src="https://acegif.com/wp-content/gif/feliznvdd-unq-4.gif" alt="">
+
+            </dialog>
+
+            <button style="width: 200px;height: 50px;" id="show"
+                onclick="document.getElementById('dialogo').showModal();">Abrir</button>
+
+        </div>
+
+
+
+    </section>
+
+    <section>
+
+
+        <div class="disenoform">
+
+
+            <form class="formulario">
+                <!-- Es indispensable meter el nombre y el email para que aparezca el boton submit-->
+
+                <p>
+                    <label id="obligatorio" for="nombre">Nombre *
+
+                    </label>
+                    <input type="text" onkeyup="marcarBoton()" name="introducir_nombre" id="nombre" required
+                        placeholder="Escribe tu nombre">
+                </p>
+
+                <p>
+                    <label id="obligatorio" for="username">Email *</label>
+                    <input type="text" onkeyup="marcarBoton()" id="correo" name="correo" placeholder="Email" required>
+                </p>
+
+
+
+
+                <p>
+                    <label id="obligatorio" for="mensaje">Consulta *
+
+                    </label>
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                        placeholder="Deja aquí tu comentario..."></textarea>
+                </p>
+
+                <p id="instrucciones"> Los campos marcados con * serán obligatorios</p>
+
+                <label>
+                    <input type='checkbox' value='SI' id='acepto' required />
+                    He leído y acepto las condiciones
+                </label>
+
+                <br>
+                <br>
+
+                <input id="botoncito" type="submit" value="Submit"
+                    onclick="pruebaemail(correo.value);checkbox(); validaMotivo(); validaNombre();telefonoLongitud();confirmar()">
+
+
+                </input>
+
+                <br>
+                <br>
+                <div>
+                    <input type="button" value="Resetear Formulario" onclick="location.reload(true)" />
+                    <!--Esto fuerza un f5 de la página sin cache y vuelve el boton submit a disabled-->
+                    <!--He intentado hacerlo con el reset pero no devolvía el boton submit a su estado original por la validación de JavaScript-->
+                </div>
+
+
+
+            </form>
+
+        </div>
+        <br>
+        <br><br>
+        <br>
+
+    </section>
+
+
+    <footer>
+
+        <p>Política de Privacidad en Cesur Formacion </p>
+        <a href="http://www.w3.org/WAI/WCAG1A-Conformance" title="Explicación del Nivel A de Conformidad">
+            <img height="32" width="88" src="http://www.w3.org/WAI/wcag1A" alt="Icono de conformidad con el Nivel A, 
+	de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI"></a>
+
+    </footer>
+
+
+    <script>
+
+        $(document).ready(function () {
+            var cont = 0;
+            do {
+                $(".logocesur").animate({
+                    opacity: "0.1"
+                }),
+                    $(".logocesur").animate({
+                        opacity: "1"
+                    });
+                cont++
+            } while (cont < 100000);
+            
+            $("#pararAnimacion").click(function () {
+                $(".logocesur").stop(true, true);
+            });
+            
+
+        });
+
+    </script>
+
+</body>
+
+</html>
